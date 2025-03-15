@@ -1,19 +1,94 @@
-/* Estilos generales para todas las páginas */
 body {
     font-family: Arial, sans-serif;
-    margin: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
     background-color: #f4f4f4;
 }
+
 .container {
     max-width: 800px;
     background: white;
+}
+
+nav {
+    background:#fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+    z-index: 1000; /* Asegura que quede sobre la imagen */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+
+header {
+    margin-top: 46px; /* Ajuste para que el contenido no quede oculto detrás del menú */
+    position: relative;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: -10px; /* Opcional: ajusta si hay un espacio no deseado */
+}
+
+
+button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    width: 30%;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contacto {
+    background: white;
+    max-width: 500px;
+    margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-h1, h2 {
-    color: #333;
-}
+
 ul {
     list-style-type: none;
     padding: 0;
@@ -24,3 +99,62 @@ li {
     padding: 10px;
     border-radius: 5px;
 }
+
+/* Estilos del formulario */
+.formulario label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario textarea {
+    height: 120px;
+}
+
+/* Botón de envío */
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario button:hover {
+    background-color: #00408a;
+}
+
+/* Sección de información */
+.informacion {
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.mapa iframe {
+    border-radius: 10px;
+}
+
+footer {
+    background: #000000;
+    color: white;
+    padding: 8px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
